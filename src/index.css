@@ -1,0 +1,31 @@
+body {
+    background: #eee;
+    font-family: "Nunito SemiBold";
+}
+
+.song-detail {
+    background-color: #025AA5;
+    height: 100vh;
+}
+
+.song-list {
+    height: 60vh;
+    padding: 10px;
+}
+
+.new-song{
+    margin: 20px;
+    padding: 10px;
+}
+
+.new-song input select {
+    width: 80%;
+}
+
+
+.collection-item  {
+    margin: 10px ;
+    padding: 10px;
+}
+
+  
