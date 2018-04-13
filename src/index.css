@@ -8,6 +8,27 @@ body {
     height: 100vh;
 }
 
+.song-detail h1 {
+    color: #eee;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.song-detail button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    transition: all 0.5s;
+}
+
+.song-detail button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
 .song-list {
     height: 60vh;
     padding: 10px;
@@ -15,13 +36,29 @@ body {
 
 .new-song{
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
+}
+
+.new-song label {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .new-song input select {
     width: 80%;
 }
 
+.new-song button {
+    margin-top: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    transition: all 0.5s;
+}
+
+.new-song button:hover {
+    background-color: #025AA5;
+    color: #fff;
+}
 
 .collection-item  {
     margin: 10px ;

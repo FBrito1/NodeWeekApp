@@ -9,20 +9,6 @@ import getCurrentSong from '../queries/getCurrentSong';
 const API_KEY = 'AIzaSyBXamyvoaLQHRUY_4nh1Fna2U2y9GYzOtE';
 
 
-/* class SongDetail extends Component {
-
-    render() {
-        const { currentSong } = this.props;
-        return(
-            <div className="col-md-6 song-detail">
-                <h1>{currentSong.songName}</h1>
-            </div>
-        );
-    
-    }   
-} */
-
-
 class SongDetail extends Component {
 
     constructor(props) {
@@ -47,8 +33,10 @@ class SongDetail extends Component {
         const { currentSong } = this.props;
         return(
             <div className="col-md-6 song-detail video-detail">
-                <h1>{currentSong.songName}</h1>
-                <button onClick={() => this.renderVideo()}>Show Video</button>                
+                <div>
+                    <h1>{currentSong.songName}</h1>
+                    <button onClick={() => this.renderVideo()}>Show Video</button>
+                </div>             
                 <div className="embed-responsive embed-responsive-16by9">
                     <iframe className="embed-responsive-item" src={this.state.url}></iframe>
                 </div>

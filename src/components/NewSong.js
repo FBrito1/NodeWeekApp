@@ -36,20 +36,22 @@ class NewSong extends Component {
 
     render() {
         return(
-            <div className="new-song">
-                <form className="form-group" 
+            <form className="form-group new-song" 
                 onSubmit={this.onSubmit.bind(this)}
                 >
-                    <label>Song Title:</label>
+                <div className="field">
+                    <label>Nome da Musica: </label>
                     <input
                     required={true} 
                     className="form-control"
                     onChange={event => this.setState({ songName: event.target.value })}
                     />  
-                    <input type="submit" value="Adicionar" />
-                </form>
-                
-            </div>
+                    <button
+                    className="btn btn-default" 
+                    type="submit"
+                    >Adicionar Musica</button>
+                </div>
+            </form>
         );
     }
 }
